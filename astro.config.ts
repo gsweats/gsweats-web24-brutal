@@ -11,7 +11,7 @@ export default defineConfig({
   // used to generate images
   site:
     process.env.VERCEL_ENV === 'production'
-      ? 'https://brutal.elian.codes/'
+      ? 'https://gsweats.ca/'
       : process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}/`
       : 'https://localhost:3000/',

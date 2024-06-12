@@ -10,7 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - 💚 Fix the `pnpm run build` command by disabling `feed.rss` for now
-  - (_[81f5656](https://github.com/sqrl-ca/sqrl.ca-web24/commit/81f565604b19effffe5385312cce199a96c07f11))_
+  - (_[c91bf28](https://github.com/sqrl-ca/sqrl.ca-web24/commit/c91bf2888092ba87b390e51cabfaa6ca31534281))_
+
+
+
+- 💚 Add `wrangler.toml` for Cloudflare Pages config
+  - (_[af3fc21](https://github.com/sqrl-ca/sqrl.ca-web24/commit/af3fc218f471870c782a78fc39d7c300074d250f))_
 
 
 

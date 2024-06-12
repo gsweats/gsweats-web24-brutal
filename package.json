@@ -1,14 +1,14 @@
 {
-  "name": "",
-  "version": "1.2.0",
+  "name": "sqrl.ca-web24",
+  "version": "0.1.0",
   "type": "module",
   "packageManager": "pnpm@8.6.0",
   "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "name": "Greg Stevens",
+    "email": "holla@gsweats.ca",
+    "url": "https://gsweats.ca/"
   },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://github.com/sqrl-ca/sqrl.ca-web24",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "brand",
         "blog",
-        "version"
+        "version",
+        "cloudflare"
     ]
 }

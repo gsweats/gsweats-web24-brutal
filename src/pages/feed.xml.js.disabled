@@ -4,17 +4,17 @@ import { getCollection } from 'astro:content';
 export async function GET(context) {
   const blog = await getCollection('blog');
   return rss({
-    title: 'Brutal Blog',
-    description: 'Brutal is a theme for Astro',
+    title: 'sqrl.ca Blog',
+    description: 'sqrl.ca is a Brutal take on `Brutal`, a theme for Astro',
     stylesheet: false,
     site: context.site,
     items: blog.map((post) => ({
+      link: `/blog/${post.slug}/`,
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/blog/${post.slug}/`,
     })),
-    customData: '<language>en-us</language>',
-    canonicalUrl: 'https://brutal.elian.codes',
+    customData: '<language>en-ca</language>',
+    canonicalUrl: 'https://sqrl.ca',
   });
 }

@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "brand",
-        "blog"
+        "blog",
+        "version"
     ]
 }

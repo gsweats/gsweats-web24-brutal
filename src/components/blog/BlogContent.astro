@@ -7,11 +7,19 @@ const { content } = Astro.props;
 ---
 
 <article class='prose-slate w-sm md:w-prose md:prose poppins'>
-  <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
+  <a href='/blog/' title='Back to GSweats.ca blog'>&larr; Back to GregSweats blog</a>
   <p class='text-slate text-sm md:text-base'>
-    Published on {content.pubDate} by {content.author}
+    Published by {content.author} on {content.pubDate}
   </p>
   <slot />
-  <p class='text-slate'>Written by {content.author}</p>
-  <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
+  <!-- <p class='text-slate'>Written by {content.author}</p> -->
+   <p>
+    <a
+      href='/blog/'
+      title='Back to blog'
+      class="mt-4"
+    >
+      &larr; Back to GregSweats blog
+    </a>
+  </p>
 </article>

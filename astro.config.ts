@@ -3,6 +3,11 @@ import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
 
 export default defineConfig({
+  // REDIRECTS #important
+  redirects: {
+    '/off': '/off24',
+    '/off24': '/blog/2024-06-okotoks-film-festival-2024/',
+  },
   // used to generate images
   site:
     process.env.VERCEL_ENV === 'production'

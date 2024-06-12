@@ -4,6 +4,7 @@
         "blog",
         "version",
         "cloudflare",
-        "content"
+        "content",
+        "redirect"
     ]
 }

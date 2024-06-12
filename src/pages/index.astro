@@ -1,47 +1,51 @@
 ---
-import Layout from '@layouts/Default.astro';
-import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
-import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
-import { Button } from '@eliancodes/brutal-ui';
-import { Card } from '@eliancodes/brutal-ui';
+import Layout from "@layouts/Default.astro";
+import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
+import MobileSocials from "@components/home/MobileSocials.astro";
+import { Pill } from "@eliancodes/brutal-ui";
+import { Button } from "@eliancodes/brutal-ui";
+import { Card } from "@eliancodes/brutal-ui";
 
 const links = [
-  { name: '🍿 Oko. Film Fest', url: '/off24' },
-  { name: '📻 YouTube', url: 'https://youtube.com/GregSweats24' },
-  { name: '📸 Instagram', url: 'https://www.instagram.com/GregSweats/' },
-  { name: '🫠 Stevens.pro', url: 'https://www.stevens.pro/' },
-  { name: '😱 Dalyle.ca', url: 'https://www.dalyle.ca/' },
-  { name: '🐘 Mastodon', url: '' },
-  { name: '💼 Resume', url: 'https://www.stevens.pro/resume' },
-  { name: '🎮 Twitch', url: 'https://www.twitch.tv/GregSweats' },
+  {
+    name: "🍿 Oko. Film Fest",
+    url: "/off24",
+    tooltip: "Okotoks Film Festival 2024",
+  },
+  { name: "📻 YouTube", url: "https://youtube.com/GregSweats24" },
+  { name: "📸 Instagram", url: "https://www.instagram.com/GregSweats/" },
+  { name: "🫠 Stevens.pro", url: "https://www.stevens.pro/" },
+  { name: "😱 Dalyle.ca", url: "https://www.dalyle.ca/" },
+  { name: "🐘 Mastodon", url: "" },
+  { name: "💼 Resume", url: "https://www.stevens.pro/resume" },
+  { name: "🎮 Twitch", url: "https://www.twitch.tv/GregSweats" },
   // { name: 'Discord', url: '' },
   // { name: '', url: '' },
 ];
 ---
 
 <Layout
-  title='@GregSweats / @GSweats / Greg Stevens'
-  pageTitle='Home //gsweats.ca/'
-  description='Landing page for @GregSweats (Greg Stevens, Okotoks, Calgary, WebDev, DevOps, etc.)'
+  title="@GregSweats / @GSweats / Greg Stevens"
+  pageTitle="Home //gsweats.ca/"
+  description="Landing page for @GregSweats (Greg Stevens, Okotoks, Calgary, WebDev, DevOps, etc.)"
 >
-  <main class='bg-pink p-6'>
+  <main class="bg-pink p-6">
     <MobileSocials />
-    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
-      <div class='col-span-2'>
+    <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
+      <div class="col-span-2">
         <Card>
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
+          <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">
             Links 👇
           </h2>
-          <ul class='flex gap-4 flex-wrap'>
+          <ul class="flex gap-4 flex-wrap">
             {
               links.map((item) => (
                 <li>
                   <Pill>
                     <a
-                      class='sanchez'
+                      class="sanchez"
                       href={item.url}
-                      target='_blank'
+                      target="_blank"
                       title={`Go to ${item.name}`}
                     >
                       {item.name}
@@ -53,31 +57,35 @@ const links = [
           </ul>
         </Card>
       </div>
-      <div class='col-span-2'>
+      <div class="col-span-2">
         <Card>
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+          <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
             What is GSweats?
           </h2>
           <ul>
             <li>1. An alter-ego for "Greg Stevens".</li>
+            <li>
+              &nbsp;
+              <!-- That's how some silly BACKEND DEVS add spacing ;) -->
+              <!-- TODO: Use `mt-69` or `my-...` something? -->
+              <!-- UnoCSS? -->
+            </li>
             <li>2. A left-hand only, ergonomic name.</li>
           </ul>
         </Card>
       </div>
 
-      <h2 class='hidden'>About</h2>
-      <div class='col-span-4'>
+      <h2 class="hidden">About</h2>
+      <div class="col-span-4">
         <Card>
-          <div class='flex flex-col justify-between items-start gap-4'>
-            <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
-              <a
-                class='text-white'
-                target='_blank'
-                href='https://gsweats.ca/'>🍿 Okotoks Film Festival 2024</a
+          <div class="flex flex-col justify-between items-start gap-4">
+            <p class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
+              <a class="text-white" target="_blank" href="https://gsweats.ca/"
+                >Okotoks Film Festival 2024 🍿</a
               >
             </p>
-            <Button target={'_self'} href='/off24/'>
-              Read More &rarr;
+            <Button target={"_self"} href="/off24/">
+              📖 Read More, 📽️Access Links to YouTube Playlist &rarr;
             </Button>
           </div>
         </Card>

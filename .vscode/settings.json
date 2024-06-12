@@ -5,6 +5,8 @@
         "version",
         "cloudflare",
         "content",
-        "redirect"
-    ]
+        "redirect",
+        "GitHub"
+    ],
+    "explorer.excludeGitIgnore": true
 }

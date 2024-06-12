@@ -24,4 +24,4 @@ layout: '../../../layouts/BlogPost.astro'
 _Embed of a single video within the playlist for your easy access!_
 
 
-<iframe width="543" height="369" src="https://www.youtube.com/embed/wMlb5jNxX8A?list=PLjpHcNMb8OOWVsEldIAaBAhBDT8FGe0Ww" title="T3-day4-saturday-v3.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="543" height="369" src="https://www.youtube.com/embed/Y5npb6T44sY?list=PLjpHcNMb8OOWVsEldIAaBAhBDT8FGe0Ww" title="T3-day4-saturday-v3.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -15,6 +15,16 @@ if (Astro.props.ogImage === undefined) {
 }
 
 const { title, description, ogImage } = Astro.props;
+
+/*
+Google Analytics taken from last month's site `gsweats-landing-pad`.
+
+From 27a01b2f7aa2041f64728be28934704ac0e24db3 Mon Sep 17 00:00:00 2001
+From: Greg Sweats <REDACTED@REDACTED.ORG>
+Date: Mon, 13 May 2024 16:55:13 -0600
+*/
+const googleAnalyticsId = 'G-35X6WN2E63';
+const googleAnalyticsSrc = 'https://www.googletagmanager.com/gtag/js?id=' + googleAnalyticsId;
 ---
 
 <head>
@@ -53,3 +63,13 @@ const { title, description, ogImage } = Astro.props;
 
   <slot />
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script is:inline async src={googleAnalyticsSrc}></script>
+<script is:inline define:vars={{ googleAnalyticsId }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', googleAnalyticsId);
+</script>

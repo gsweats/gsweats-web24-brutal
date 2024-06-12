@@ -1,0 +1,48 @@
+From 27a01b2f7aa2041f64728be28934704ac0e24db3 Mon Sep 17 00:00:00 2001
+From: Greg Stevens <gregsweats+git@proton.me>
+Date: Mon, 13 May 2024 16:55:13 -0600
+Subject: [PATCH] =?UTF-8?q?feat(analytics):=20=F0=9F=9A=80=20Add=20Google?=
+ =?UTF-8?q?=20Analytics?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ src/layouts/Default.astro | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/src/layouts/Default.astro b/src/layouts/Default.astro
+index 6776f3c..6af1b99 100644
+--- a/src/layouts/Default.astro
++++ b/src/layouts/Default.astro
+@@ -23,6 +23,9 @@ interface Props {
+ }
+
+ const { title, description, image, noindex = false } = Astro.props as Props;
++
++const googleAnalyticsId = 'G-35X6WN2E63';
++const googleAnalyticsSrc = 'https://www.googletagmanager.com/gtag/js?id=' + googleAnalyticsId;
+ ---
+
+ <!doctype html>
+@@ -39,6 +42,17 @@ const { title, description, image, noindex = false } = Astro.props as Props;
+       noindex={noindex}
+     />
+   </head>
++
++  <!-- Google tag (gtag.js) -->
++  <script is:inline async src={googleAnalyticsSrc}></script>
++  <script is:inline define:vars={{ googleAnalyticsId }}>
++    window.dataLayer = window.dataLayer || [];
++    function gtag(){dataLayer.push(arguments);}
++    gtag('js', new Date());
++
++    gtag('config', googleAnalyticsId);
++  </script>
++
+   <body
+     id="body"
+     class="min-h-[100lvh] bg-base-50 text-base-800 dark:bg-base-950 dark:text-base-200"
+--
+2.45.2.windows.1
+

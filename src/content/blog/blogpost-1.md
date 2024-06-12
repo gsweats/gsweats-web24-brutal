@@ -9,7 +9,7 @@ tags:
   - sqrl
   - homelab
 imgUrl: '../../assets/astro.jpeg'
-description: New site for the ressurection of [sqrl.ca](https://sqrl.ca/)
+description: Landing page for @GregSweats (Greg Stevens, Okotoks, Calgary, WebDev, DevOps, etc.)
 layout: '../../layouts/BlogPost.astro'
 ---
 

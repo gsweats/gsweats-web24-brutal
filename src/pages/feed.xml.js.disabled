@@ -4,8 +4,8 @@ import { getCollection } from 'astro:content';
 export async function GET(context) {
   const blog = await getCollection('blog');
   return rss({
-    title: 'sqrl.ca Blog',
-    description: 'sqrl.ca is a Brutal take on `Brutal`, a theme for Astro',
+    title: 'gsweats.ca Blog',
+    description: 'gsweats.ca is a Brutal take on `Brutal`, a theme for Astro',
     stylesheet: false,
     site: context.site,
     items: blog.map((post) => ({
@@ -15,6 +15,6 @@ export async function GET(context) {
       description: post.data.description,
     })),
     customData: '<language>en-ca</language>',
-    canonicalUrl: 'https://sqrl.ca',
+    canonicalUrl: 'https://gsweats.ca',
   });
 }

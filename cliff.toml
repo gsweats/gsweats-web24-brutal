@@ -27,7 +27,7 @@ body = """
     ### {{ group | upper_first }}
     {% for commit in commits %}
         - {{ commit.message | upper_first }}
-            {# 2 spaces for indnent #} {# #} - (_[{{ commit.id | truncate(length=7, end="") }}{% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}](https://github.com/sqrl-ca/sqrl.ca-web24/commit/{{ commit.id }}))_
+            {# 2 spaces for indnent #} {# #} - (_[{{ commit.id | truncate(length=7, end="") }}{% if commit.github.username %} by @{{ commit.github.username }}{%- endif -%}](https://github.com/GregSweats/gsweats-web24-brutal/commit/{{ commit.id }}))_
             {# source: https://github.com/orhun/git-cliff/blob/main/examples/github.toml #}
             {% if commit.github.pr_number %} in \
                 {# 4 spaces for indnent #} {# #} {# #} {# #} - [#{{ commit.github.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.github.pr_number }}) \

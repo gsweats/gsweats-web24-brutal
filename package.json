@@ -1,5 +1,5 @@
 {
-  "name": "sqrl.ca-web24",
+  "name": "gsweats-web24-brutal",
   "version": "0.1.0",
   "type": "module",
   "packageManager": "pnpm@8.6.0",
@@ -8,7 +8,7 @@
     "email": "holla@gsweats.ca",
     "url": "https://gsweats.ca/"
   },
-  "homepage": "https://github.com/sqrl-ca/sqrl.ca-web24",
+  "homepage": "https://github.com/GregSweats/gsweats-web24-brutal",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

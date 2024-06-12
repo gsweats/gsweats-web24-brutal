@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea to Brutal
 title: ''
 labels: enhancement
-assignees: ElianCodes
+assignees: GregSweats
 
 ---
 

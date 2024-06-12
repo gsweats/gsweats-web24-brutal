@@ -3,6 +3,7 @@
         "brand",
         "blog",
         "version",
-        "cloudflare"
+        "cloudflare",
+        "content"
     ]
 }

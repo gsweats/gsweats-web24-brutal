@@ -1,6 +1,7 @@
 ---
 import { Card } from '@eliancodes/brutal-ui';
 import { Image } from 'astro:assets';
+import { marked } from 'marked';
 
 interface Props {
   title: string;
@@ -10,6 +11,9 @@ interface Props {
 }
 
 const { title, imgAlt, imgSrc, description } = Astro.props;
+
+const descriptionHtml = marked.parse(description);
+
 ---
 
 <Card color='white'>
@@ -23,6 +27,6 @@ const { title, imgAlt, imgSrc, description } = Astro.props;
       class='rounded h-full w-full object-cover'
     />
   </div>
-  <p class='poppins'>{description}</p>
+  <p class='poppins' set:html={descriptionHtml}></p>
   <slot />
 </Card>

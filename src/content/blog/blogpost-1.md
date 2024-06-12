@@ -1,13 +1,15 @@
 ---
-title: Blogpost 1
-pubDate: 11/09/2022 14:25
-author: "Elian Van Cutsem"
+title: Hello, World!
+pubDate: 2024-06-05 at 23:15:21 MDT (GMT -06:00)
+author: "GregSweats"
 tags:
   - JavaScript
   - Astro
   - UnoCSS
+  - sqrl
+  - homelab
 imgUrl: '../../assets/astro.jpeg'
-description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
+description: New site for the ressurection of [sqrl.ca](https://sqrl.ca/)
 layout: '../../layouts/BlogPost.astro'
 ---
 

@@ -14,3 +14,15 @@ dist
 ###
 *.kra~
 *.*~
+
+###
+# Shortcuts for #HappyDevs #DevEx #DX
+# @since 2024-06-26
+###
+# I could not get this exclusion working right.
+# So, workaround below #CopyPasteSnippet
+#
+#     git add shortcuts/README.md -f
+#
+# !shortcuts/*.md
+shortcuts/*

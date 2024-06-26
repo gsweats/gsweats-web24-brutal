@@ -6,7 +6,8 @@
         "cloudflare",
         "content",
         "redirect",
-        "GitHub"
+        "GitHub",
+        "DevEx"
     ],
     "explorer.excludeGitIgnore": true
 }
